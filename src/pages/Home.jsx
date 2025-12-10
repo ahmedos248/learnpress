@@ -1,11 +1,24 @@
 import React from 'react'
-
+import Hero from '../components/home/hero'
+import Categories from '../components/home/Categories'
+import ExploreSection from '../components/home/ExploreSection'
+import Rate from '../components/home/Rate'
+import Amazing from '../components/home/Amazing'
+import Grow from '../components/home/Grow'
+import Academy from '../components/home/Academy'
 const Home = () => {
     return (
-        <div>
-            <h1 className='text-3xl font-bold underline'>Learnpress</h1>
-        </div>
-    )
+      <div>
+        <Hero />
+        <Categories />
+        <ExploreSection />
+        <Rate />
+
+        <Grow />
+        <Amazing />
+<Academy />
+      </div>
+    );
 }
 
 export default Home
