@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Search from "./Search";
+import { Menu, MenuHandler, MenuList, MenuItem } from "@material-tailwind/react";
 
 const Navbar = ({ searchQuery, setSearchQuery }) => {
     const location = useLocation();
@@ -10,9 +11,9 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
         { to: "/", text: "Home", activeOn: ["/"] },
         { to: "/courses", text: "Courses", activeOn: ["/courses"] },
         { to: "/blog", text: "Blog", activeOn: ["/blog"] },
-        { to: "/contact", text: <>Page <i className="text-[10px] fa-solid fa-chevron-down"></i></>, activeOn: ["/contact"] },
+        { dropdown: true, text: <>Page <i className="text-[10px] fa-solid fa-chevron-down"></i></>, menuItems: [<Link to="/contact">Contact</Link>, "Menu Item 2", "Menu Item 3"], activeOn: ["/contact"] },
         { to: "/#learnpress", text: "LearnPress Add-On", hash: true, noActive: true },
-        { to: "/#theme", text: "Premium Theme", hash: true, noActive: true }
+        { to: "/#theme", text: "Premium Theme", hash: true, noActive: true },
     ];
 
     return (
@@ -22,9 +23,25 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
                     <Link to="/"><img src="/images/logo.svg" alt="EduPress Logo" /></Link>
                     <Link to="/" className="text-2xl font-bold">EduPress</Link>
                 </div>
-
                 <ul className="flex h-14 items-center">
                     {navItems.map((item, idx) => {
+                        if (item.dropdown) {
+                            return (
+                                <li key={idx} className="h-14 px-4 flex items-center hover:bg-gray-200 hover:text-orange-500">
+                                    <Menu>
+                                        <MenuHandler className="cursor-pointer">
+                                            <div>{item.text}</div>
+                                        </MenuHandler>
+                                        <MenuList className="mt-2 ms-12 p-1">
+                                            {item.menuItems.map((m, i) => (
+                                                <MenuItem key={i} className="hover:text-orange-500">{m}</MenuItem>
+                                            ))}
+                                        </MenuList>
+                                    </Menu>
+                                </li>
+                            );
+                        }
+
                         const isActive = !item.noActive && item.activeOn?.includes(location.pathname);
                         const Wrapper = item.hash ? HashLink : Link;
 
@@ -37,7 +54,6 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
                         );
                     })}
                 </ul>
-
                 <div className="flex items-center space-x-3">
                     <Link to="/login" className="hover:text-orange-500">Login/Register</Link>
                     <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
