@@ -6,6 +6,7 @@ import Rate from '../components/home/Rate'
 import Amazing from '../components/home/Amazing'
 import Grow from '../components/home/Grow'
 import Academy from '../components/home/Academy'
+import Feedbacks from '../components/home/Feedbacks'
 const Home = () => {
   return (
     <div>
