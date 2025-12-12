@@ -12,18 +12,18 @@ const features = [
 const Grow = () => {
   return (
     <section className="px-4 py-10 md:px-20 bg-white">
-      <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-20 p-4">
+      <div className="flex flex-col lg:flex-row justify-between gap-10 md:gap-20 p-4">
    
-        <div className="w-full md:w-1/2 flex justify-center">
+        <div className="w-full lg:w-1/2 flex justify-center">
           <img
             src="images/Vector.png"
             alt="Grow Your Skills"
-            className="w-full  max-w-[400px] max-h-[400px] "
+            className="w-full  max-w-[400px] h-auto object-contain"
           />
         </div>
 
       
-        <div className="w-full md:w-1/2 md:pr-10 flex flex-col justify-center">
+        <div className="w-full lg:w-1/2 md:pr-10 flex flex-col justify-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:w-3/4">
             Grow us your skill with LearnPress LMS
           </h2>
