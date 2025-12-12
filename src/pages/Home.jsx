@@ -5,8 +5,8 @@ import ExploreSection from '../components/home/ExploreSection'
 import Rate from '../components/home/Rate'
 import Amazing from '../components/home/Amazing'
 import Grow from '../components/home/Grow'
-import Academy from '../components/home/Academy'
 import Feedbacks from '../components/home/Feedbacks'
+import Academy from '../components/home/Academy'
 const Home = () => {
   return (
     <div>
@@ -16,6 +16,7 @@ const Home = () => {
       <Rate />
       <Grow />
       <Amazing />
+      <Feedbacks />
       <Academy />
     </div>
   );

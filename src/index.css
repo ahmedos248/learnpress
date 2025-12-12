@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer base {
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.exo-text {
+    font-family: "Exo", sans-serif;
+    font-style: normal;
+}
