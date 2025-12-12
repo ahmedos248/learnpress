@@ -8,18 +8,17 @@ import Grow from '../components/home/Grow'
 import Academy from '../components/home/Academy'
 import Feedbacks from '../components/home/Feedbacks'
 const Home = () => {
-    return (
-      <div>
-        <Hero />
-        <Categories />
-        <ExploreSection />
-        <Rate />
-        <Grow />
-        <Amazing />
-        <Feedbacks />
-        <Academy />
-      </div>
-    );
+  return (
+    <div>
+      <Hero />
+      <Categories />
+      <ExploreSection />
+      <Rate />
+      <Grow />
+      <Amazing />
+      <Academy />
+    </div>
+  );
 }
 
 export default Home
