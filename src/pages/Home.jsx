@@ -7,18 +7,17 @@ import Amazing from '../components/home/Amazing'
 import Grow from '../components/home/Grow'
 import Academy from '../components/home/Academy'
 const Home = () => {
-    return (
-      <div>
-        <Hero />
-        <Categories />
-        <ExploreSection />
-        <Rate />
-
-        <Grow />
-        <Amazing />
-<Academy />
-      </div>
-    );
+  return (
+    <div>
+      <Hero />
+      <Categories />
+      <ExploreSection />
+      <Rate />
+      <Grow />
+      <Amazing />
+      <Academy />
+    </div>
+  );
 }
 
 export default Home
