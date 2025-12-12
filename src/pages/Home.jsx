@@ -14,11 +14,10 @@ const Home = () => {
         <Categories />
         <ExploreSection />
         <Rate />
-
         <Grow />
         <Amazing />
-<Academy />
-<Feedbacks />
+        <Feedbacks />
+        <Academy />
       </div>
     );
 }
