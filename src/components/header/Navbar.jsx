@@ -11,14 +11,14 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
         { to: "/", text: "Home", activeOn: ["/"] },
         { to: "/courses", text: "Courses", activeOn: ["/courses"] },
         { to: "/blog", text: "Blog", activeOn: ["/blog"] },
-        { dropdown: true, text: <>Page <i className="text-[10px] fa-solid fa-chevron-down"></i></>, menuItems: [<Link to="/contact">Contact</Link>, "Menu Item 2", "Menu Item 3"], activeOn: ["/contact"] },
+        { dropdown: true, text: <>Page <i className="text-[10px] fa-solid fa-chevron-down"></i></>, menuItems: [<Link to="/contact">Contact</Link>, <Link to="/faq">FAQ</Link>, <Link to="/blog">Blog</Link>] },
         { to: "/#learnpress", text: "LearnPress Add-On", hash: true, noActive: true },
         { to: "/#theme", text: "Premium Theme", hash: true, noActive: true },
     ];
 
     return (
-        <nav className="bg-white shadow w-full fixed top-0 z-50 exo-text text-[16px] font-semibold lg:block hidden">
-            <div className="max-w-7xl mx-auto px-6 flex justify-between items-center space-x-20">
+        <nav className="bg-white shadow w-full fixed top-0 z-50 exo-text xl:text-[16px] lg:text-[14px] font-semibold lg:block hidden">
+            <div className="max-w-7xl mx-auto px-6 flex justify-between items-center xl:space-x-20 lg:space-x-6 ">
                 <div className="flex items-center space-x-1">
                     <Link to="/"><img src="/images/logo.svg" alt="EduPress Logo" /></Link>
                     <Link to="/" className="text-2xl font-bold">EduPress</Link>
@@ -55,7 +55,7 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
                     })}
                 </ul>
                 <div className="flex items-center space-x-3">
-                    <Link to="/login" className="hover:text-orange-500">Login/Register</Link>
+                    <Link to="/login" className="hover:text-orange-500">Login / Register</Link>
                     <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
                 </div>
             </div>

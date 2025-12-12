@@ -1,22 +1,22 @@
 import React from "react";
-import Course1 from "./cards/Course1";
-import Course2 from "./cards/Course2";
+import Article1 from "./cards/Article1";
+import Article2 from "./cards/Article2";
 import useData from "./hooks/useData";
 import usePagination from "./hooks/usePagination";
 import { Pagination } from "./Pagination";
 
-const AllCourses = () => {
-    const { filteredCourses, courseSearch, setCourseSearch, active, setActive, loading, error } = useData();
-    const { currentData, currentPage, totalPages, goTo, next, prev } = usePagination(filteredCourses, 6);
+const AllArticles = () => {
+    const { filteredArticles, articleSearch, setArticleSearch, active, setActive, loading, error } = useData();
+    const { currentData, currentPage, totalPages, goTo, next, prev } = usePagination(filteredArticles, 6);
 
-    if (loading) return <p className="text-center mt-20">Loading courses...</p>;
+    if (loading) return <p className="text-center mt-20">Loading articles...</p>;
     if (error) return <p className="text-center mt-20 text-red-500">{error}</p>;
 
     return (
         <section className="max-w-screen-xl mx-auto px-6 py-12 bg-white exo-text lg:grid lg:grid-cols-4">
             <div className="lg:col-span-3">
                 <div className="flex flex-col lg:flex-row lg:justify-between items-start mb-8 space-y-4">
-                    <h2 className="text-3xl font-semibold">All Courses</h2>
+                    <h2 className="text-3xl font-semibold">All Articles</h2>
 
                     <div className="space-y-4">
                         <div className="flex justify-between space-x-2">
@@ -24,8 +24,8 @@ const AllCourses = () => {
                                 <input
                                     type="text"
                                     placeholder="Search"
-                                    value={courseSearch}
-                                    onChange={(e) => setCourseSearch(e.target.value)}
+                                    value={articleSearch}
+                                    onChange={(e) => setArticleSearch(e.target.value)}
                                     className="w-full focus:outline-none"
                                 />
                                 <i className="fa-solid fa-magnifying-glass"></i>
@@ -54,14 +54,14 @@ const AllCourses = () => {
 
                 <div className="grid grid-cols-2 lg:gap-8 gap-4">
                     {currentData.length > 0 ? (
-                        currentData.map((course) => (
-                            <React.Fragment key={course.id}>
-                                {active === "a" && <Course1 course={course} />}
-                                {active === "b" && <Course2 course={course} />}
+                        currentData.map((article) => (
+                            <React.Fragment key={article.id}>
+                                {active === "a" && <Article1 article={article} />}
+                                {active === "b" && <Article2 article={article} />}
                             </React.Fragment>
                         ))
                     ) : (
-                        <p>No courses found</p>
+                        <p>No articles found</p>
                     )}
                 </div>
 
@@ -79,4 +79,4 @@ const AllCourses = () => {
     );
 };
 
-export default AllCourses;
+export default AllArticles;

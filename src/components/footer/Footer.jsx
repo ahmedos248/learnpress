@@ -24,7 +24,7 @@ export default function Footer() {
                     <ul className="space-y-5 text-sm font-semibold text-gray-600">
                         <li><Link to="/contact" className="hover:text-orange-500">Contact Us</Link></li>
                         <li><Link to="/blog" className="hover:text-orange-500">Latest Articles</Link></li>
-                        <li><Link to="/FAQs" className="hover:text-orange-500">FAQ</Link></li>
+                        <li><Link to="/FAQ" className="hover:text-orange-500">FAQ</Link></li>
                     </ul>
                 </div>
                 <div>

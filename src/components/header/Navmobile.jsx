@@ -12,7 +12,7 @@ const Navmobile = ({ searchQuery, setSearchQuery }) => {
         { to: "/", text: "Home", activeOn: ["/"] },
         { to: "/courses", text: "Courses", activeOn: ["/courses"] },
         { to: "/blog", text: "Blog", activeOn: ["/blog"] },
-        { dropdown: true, text: <>Page <i className="text-[10px] fa-solid fa-chevron-down"></i></>, menuItems: [<Link to="/contact">Contact</Link>, "Menu Item 2", "Menu Item 3"], activeOn: ["/contact"] },
+        { dropdown: true, text: <>Page <i className="text-[10px] fa-solid fa-chevron-down"></i></>, menuItems: [<Link to="/contact">Contact</Link>, <Link to="/faq">FAQ</Link>, <Link to="/blog">Blog</Link>] },
         { to: "/#learnpress", text: "LearnPress Add-On", hash: true, noActive: true },
         { to: "/#theme", text: "Premium Theme", hash: true, noActive: true }
     ];
@@ -29,8 +29,8 @@ const Navmobile = ({ searchQuery, setSearchQuery }) => {
                     <i onClick={() => setOpen(prev => !prev)} className="fa-solid fa-bars text-orange-500 bg-white p-2 rounded shadow cursor-pointer z-50" />
                 </div>
             </nav>
-            <div className={`fixed top-14 left-0 w-full z-40 transition-transform duration-300 ease-in-out ${open ? "translate-y-0" : "-translate-y-full"} backdrop-blur-md bg-white/50 px-6 py-4 flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0 md:space-x-20 border-2 border-orange-500`}>
-                <ul className="flex flex-col md:flex-row w-full md:w-auto p-4 space-y-4 md:space-y-0 md:space-x-6 border-2 border-orange-500 rounded-md">
+            <div className={`fixed top-14 left-0 w-full z-40 transition-transform duration-300 ease-in-out ${open ? "translate-y-0" : "-translate-y-full"} backdrop-blur-md bg-white/50 px-6 py-4 flex flex-col justify-between items-start space-y-6 border-2 border-orange-500`}>
+                <ul className="flex flex-col w-full p-4 space-y-4 border-2 border-orange-500 rounded-md">
                     {navItems.map((item, idx) => {
                         if (item.dropdown) {
                             return (
@@ -59,8 +59,8 @@ const Navmobile = ({ searchQuery, setSearchQuery }) => {
                         );
                     })}
                 </ul>
-                <Link to="/login" className="w-full md:w-auto mt-2 md:mt-0 flex justify-center items-center font-semibold border-2 border-orange-500 p-3 rounded-md hover:bg-orange-500 hover:text-white transition">
-                    Login/Register
+                <Link to="/login" className="w-full mt-2 flex justify-center items-center font-semibold border-2 border-orange-500 p-3 rounded-md hover:bg-orange-500 hover:text-white transition">
+                    Login / Register
                 </Link>
             </div>
 

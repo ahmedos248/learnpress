@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen w-full relative ">
       <Header />
-      <main className="mt-14 min-h-[1500px]">
+      <main className="mt-14">
         <Outlet />
       </main>
       <Footer />
