@@ -1,3 +1,4 @@
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
@@ -11,6 +12,7 @@ import BlogSingle from './pages/BlogSingle.jsx';
 import Courses from './pages/Courses.jsx';
 import CourseDetails from './pages/CourseDetails.jsx';
 import Contact from './pages/Contact.jsx';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +25,7 @@ const router = createBrowserRouter([
       { path: "courses", element: <Courses /> },
       { path: "courses/:id", element: <CourseDetails /> },
       { path: "contact", element: <Contact /> },
+
     ],
   },
 ]);

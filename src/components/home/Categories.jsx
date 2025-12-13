@@ -19,7 +19,7 @@ import {
 
 const Categories = () => {
   return (
-    <section className="px-4 md:px-20 py-5 bg-white">
+    <section className="px-4 md:px-20 py-5 bg-white mt-10">
       <div className="container mx-auto px-15">
         <div className="flex justify-between items-center mb-10">
           <div>
@@ -27,9 +27,9 @@ const Categories = () => {
             <p className="text-gray-500">Explore our Popular Categories</p>
           </div>
 
-          <div className="border px-5 py-2 rounded-full hover:bg-gray-100">
+          <button className="border px-5 py-2 rounded-full hover:bg-gray-100">
             All Categories
-          </div>
+          </button>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">

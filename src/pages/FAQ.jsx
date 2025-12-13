@@ -1,11 +1,9 @@
 import React from 'react'
-import RoutingHeader from '../components/RoutingHeader'
+import Breadcrumb from '../components/Breadcrumb';
 const FAQ = () => {
   return (
     <div>
-      <RoutingHeader
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: "FAQ" }]}
-      />
+      <Breadcrumb  />
     </div>
   );
 }

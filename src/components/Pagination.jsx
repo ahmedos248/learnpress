@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, IconButton } from "@material-tailwind/react";
-import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
+
 
 export function Pagination({ currentPage, totalPages, goTo, next, prev }) {
     const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
