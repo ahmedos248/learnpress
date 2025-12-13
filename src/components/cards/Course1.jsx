@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import useSlugify from "../hooks/useSlugify";
 
 export default function Course1({ course }) {
+    const slugify = useSlugify();
+
     return (
         <Link
-            to={`/courses/${course.id}`}
+            to={`/courses/${course.id}-${slugify(course.title)}`}
             state={{ course }}
             className="border group border-gray-200 rounded-2xl shadow hover:shadow-xl hover:-translate-y-4 transition overflow-hidden flex flex-col lg:col-span-1 col-span-2"
         >

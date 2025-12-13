@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import useSlugify from "../hooks/useSlugify";
 
 export default function Course2({ course }) {
+  const slugify = useSlugify();
+
   return (
     <Link
-      to={`/courses/${course.id}`}
+      to={`/courses/${course.id}-${slugify(course.title)}`}
       state={{ course }}
       className="border relative group h-[250px] border-gray-200 rounded-2xl shadow hover:shadow-xl hover:-translate-y-4 transition overflow-hidden flex p-0 col-span-2"
     >
@@ -56,9 +59,8 @@ export default function Course2({ course }) {
           <span className="font-semibold text-gray-700 space-x-2">
             <s className="text-gray-400">{course.price}</s>
             <span
-              className={`${
-                course.disc === "Free" ? "text-green-500" : "text-red-500"
-              }`}
+              className={`${course.disc === "Free" ? "text-green-500" : "text-red-500"
+                }`}
             >
               {course.disc}
             </span>

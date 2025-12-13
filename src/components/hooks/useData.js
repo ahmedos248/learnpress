@@ -64,7 +64,7 @@ export default function useData() {
             result = result.filter(
                 (article) =>
                     String(article.title ?? "").toLowerCase().includes(q) ||
-                    String(article.description ?? "").toLowerCase().includes(q)
+                    String(article.category ?? "").toLowerCase().includes(q)
             );
         }
         setFilteredArticles(result);
