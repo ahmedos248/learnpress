@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "React for Beginners",
-            "category": "Web Development",
+            "category": "Commercial",
             "level": "Beginner",
             "rating": 4.3,
             "reviews": 1200,
@@ -15,7 +15,7 @@
         {
             "id": 2,
             "title": "Advanced JavaScript Mastery",
-            "category": "Programming",
+            "category": "Commercial",
             "level": "Expert",
             "rating": 4.8,
             "reviews": 980,
@@ -27,7 +27,7 @@
         {
             "id": 3,
             "title": "UI/UX Design Principles",
-            "category": "Design",
+            "category": "Office",
             "level": "Intermediate",
             "rating": 4.5,
             "reviews": 670,
@@ -39,7 +39,7 @@
         {
             "id": 4,
             "title": "Data Science with Python",
-            "category": "Data Science",
+            "category": "Office",
             "level": "Intermediate",
             "rating": 3.6,
             "reviews": 1500,
@@ -51,7 +51,7 @@
         {
             "id": 5,
             "title": "Digital Marketing Essentials",
-            "category": "Marketing",
+            "category": "Shop",
             "level": "Beginner",
             "rating": 4.3,
             "reviews": 420,
@@ -63,7 +63,7 @@
         {
             "id": 6,
             "title": "Machine Learning A-Z",
-            "category": "Artificial Intelligence",
+            "category": "Academy",
             "level": "Expert",
             "rating": 2.9,
             "reviews": 2100,
@@ -75,7 +75,7 @@
         {
             "id": 7,
             "title": "React for Beginners - Part 2",
-            "category": "Web Development",
+            "category": "Academy",
             "level": "Beginner",
             "rating": 4.4,
             "reviews": 800,
@@ -87,7 +87,7 @@
         {
             "id": 8,
             "title": "Advanced JavaScript Mastery - Part 2",
-            "category": "Programming",
+            "category": "Academy",
             "level": "Expert",
             "rating": 4.9,
             "reviews": 1050,

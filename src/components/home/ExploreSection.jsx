@@ -8,7 +8,6 @@ import { BsStars } from "react-icons/bs";
 
 const ExploreSection = () => {
   const icons = [
-
     {
       icon: <FaTools size={35} />,
       color: "bg-purple-500",
@@ -82,8 +81,8 @@ const ExploreSection = () => {
   ];
 
   return (
-    <section className="px-4 py-5 md:px-20 bg-white">
-      <div className="w-full py-16 px-6 bg-gradient-to-r from-green-100 to-red-200 relative overflow-hidden rounded-2xl">
+    <section className="px-6 py-5 md:px-20 bg-white mb-10">
+      <div className="w-full py-16 px-6 bg-gradient-to-r from-[#B5FFE7] to-[#FDC1C1] relative overflow-hidden rounded-2xl">
         <div className="absolute inset-0 pointer-events-none select-none">
           {icons.map((item, index) => (
             <div
@@ -111,7 +110,7 @@ const ExploreSection = () => {
             GET MORE POWER FROM
           </p>
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-4">
             LearnPress Add-Ons
           </h2>
 

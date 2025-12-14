@@ -16,6 +16,7 @@ const AllArticles = () => {
     return (
         <section className="max-w-screen-xl mx-auto px-6 py-12 bg-white exo-text lg:grid lg:grid-cols-4">
             <div className="lg:col-span-3">
+
                 <SearchBar
                     title="All Articles"
                     searchValue={articleSearch}
@@ -23,6 +24,7 @@ const AllArticles = () => {
                     active={active}
                     setActive={setActive}
                 />
+
 
                 <div className="grid grid-cols-2 lg:gap-8 gap-4">
                     {currentData.length > 0 ? (

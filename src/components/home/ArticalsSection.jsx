@@ -9,8 +9,8 @@ const ArticalsSection = () => {
         if (error) return <p className="text-center mt-20 text-red-500">{error}</p>;
     
   return (
-    <section className="px-4 md:px-20 py-5 bg-white">
-      <div className="flex flex-col md:flex-row justify-between items-center mb-10">
+    <section className="px-6 md:px-20 py-5 bg-white mb-10">
+      <div className="flex justify-between items-center mb-10">
         <div>
           <h2 className="text-3xl font-semibold">Latest articles</h2>
           <p className="text-zinc-400">Explore our Free Acticles</p>
@@ -22,7 +22,7 @@ const ArticalsSection = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:gap-8 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4">
         {filteredArticles.length > 0 ? (
           filteredArticles
             .slice(0, 6)
