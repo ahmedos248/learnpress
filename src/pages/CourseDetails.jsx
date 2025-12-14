@@ -3,6 +3,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import CommentForm from "../components/CommentForm";
 import FloatingCourse from "../components/coursesdetails/FloatingCourse";
 import FixedCourse from "../components/coursesdetails/FixedCourse";
+import { TransparentTabs } from "../components/TransparentTabs";
 
 export default function CourseDetails() {
     const { state } = useLocation();
@@ -22,6 +23,7 @@ export default function CourseDetails() {
             </div>
             <div className="w-full py-12">
                 <div className="max-w-screen-xl mx-auto">
+                    <TransparentTabs />
                     <CommentForm className="lg:p-4 p-6 max-w-[850px]" />
                 </div>
             </div>

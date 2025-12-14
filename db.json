@@ -362,5 +362,70 @@
             "details1": "Lorem ipsum dolor sit amet...",
             "details2": "Lorem ipsum dolor sit amet..."
         }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "name": "Laura Hipster",
+            "date": "October 03, 2022",
+            "avatar": "/images/Laura.svg",
+            "text": "Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel."
+        },
+        {
+            "id": 2,
+            "name": "Laura Hipster",
+            "date": "October 03, 2022",
+            "avatar": "/images/Laura.svg",
+            "text": "Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel."
+        },
+        {
+            "id": 3,
+            "name": "Laura Hipster",
+            "date": "October 03, 2022",
+            "avatar": "/images/Laura.svg",
+            "text": "Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel."
+        },
+        {
+            "id": 4,
+            "name": "John Doe",
+            "date": "October 04, 2022",
+            "avatar": "/images/John.svg",
+            "text": "Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas nec lacus elit."
+        },
+        {
+            "id": 5,
+            "name": "Emma Stone",
+            "date": "October 05, 2022",
+            "avatar": "/images/Emma.svg",
+            "text": "Curabitur lacinia nisi vel eros fermentum, a lacinia quam gravida. Vivamus sit amet massa sed leo lacinia ultricies."
+        },
+        {
+            "id": 6,
+            "name": "Michael Smith",
+            "date": "October 06, 2022",
+            "avatar": "/images/Michael.svg",
+            "text": "Sed auctor metus at lorem facilisis, vel tincidunt purus hendrerit. Aenean nec dui vel metus ultricies sollicitudin."
+        },
+        {
+            "id": 7,
+            "name": "Sophia Lee",
+            "date": "October 07, 2022",
+            "avatar": "/images/Sophia.svg",
+            "text": "Praesent dictum neque sit amet sapien tincidunt, non ultricies justo elementum. Morbi non arcu in dolor tincidunt fermentum."
+        },
+        {
+            "id": 8,
+            "name": "David Johnson",
+            "date": "October 08, 2022",
+            "avatar": "/images/David.svg",
+            "text": "Etiam vel quam sit amet sapien venenatis pulvinar. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus."
+        },
+        {
+            "id": 9,
+            "name": "Olivia Brown",
+            "date": "October 09, 2022",
+            "avatar": "/images/Olivia.svg",
+            "text": "Integer vel leo nec leo dictum luctus. Nullam fringilla, ipsum at elementum consectetur, nisi eros suscipit erat, sed scelerisque risus nisl nec libero."
+        }
     ]
 }

@@ -3,8 +3,10 @@ import { useState, useEffect } from "react";
 export default function useData() {
     const [courses, setCourses] = useState([]);
     const [articles, setArticles] = useState([]);
+    const [comments, setComments] = useState([]);
     const [filteredCourses, setFilteredCourses] = useState([]);
     const [filteredArticles, setFilteredArticles] = useState([]);
+    const [filteredComments, setFilteredComments] = useState([]);
 
     const [courseSearch, setCourseSearch] = useState("");
     const [articleSearch, setArticleSearch] = useState("");
@@ -34,7 +36,8 @@ export default function useData() {
         const loadAll = async () => {
             await Promise.all([
                 fetchData("http://localhost:5000/courses", setCourses),
-                fetchData("http://localhost:5000/articles", setArticles)
+                fetchData("http://localhost:5000/articles", setArticles),
+                fetchData("http://localhost:5000/comments", setComments)
             ]);
             setLoading(false);
         };
@@ -70,11 +73,18 @@ export default function useData() {
         setFilteredArticles(result);
     }, [articleSearch, articles]);
 
+    useEffect(() => {
+        let result = comments ?? [];
+        setFilteredComments(result);
+    }, [comments]);
+
     return {
         courses,
         articles,
+        comments,
         filteredCourses,
         filteredArticles,
+        filteredComments,
         courseSearch,
         setCourseSearch,
         articleSearch,
