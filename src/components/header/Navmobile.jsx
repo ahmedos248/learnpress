@@ -18,7 +18,7 @@ const Navmobile = ({ searchQuery, setSearchQuery }) => {
     ];
 
     return (
-        <div className="lg:hidden relative">
+        <div className="lg:hidden relative exo-text">
             <nav className={`fixed top-0 w-full z-50 bg-white h-14 flex justify-between items-center px-6 ${open ? "" : "shadow"}`}>
                 <div className="flex items-center space-x-2">
                     <Link to="/"><img src="/images/logo.svg" alt="EduPress Logo" /></Link>

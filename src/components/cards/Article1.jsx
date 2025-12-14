@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
-import Blog from "../../pages/Blog";
+import useSlugify from "../hooks/useSlugify";
+
 export default function Article1({ article }) {
+    const slugify = useSlugify();
+
     return (
         <Link
-            to={`/blog/${Blog.id}`}
+            to={`/blog/${article.id}-${slugify(article.title)}`}
+
             state={{ article }}
             className="border group border-gray-200 rounded-2xl shadow hover:shadow-xl hover:-translate-y-4 transition overflow-hidden flex flex-col md:col-span-1 col-span-2"
         >

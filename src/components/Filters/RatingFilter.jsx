@@ -38,7 +38,7 @@ const RatingFilter = ({ filters, setFilters, courses }) => {
             </div>
           </div>
 
-          <span className="text-sm text-gray-500 pr-6">({getCount(rate)})</span>
+          <span className="text-sm text-gray-500 pr-6">{getCount(rate)}</span>
         </label>
       ))}
     </div>

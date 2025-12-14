@@ -4,7 +4,7 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen w-full relative ">
+    <div className="flex flex-col min-h-screen w-full relative exo-text">
       <Header />
       <main className="mt-14">
         <Outlet />
