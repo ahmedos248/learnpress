@@ -5,8 +5,8 @@ export default function Course1({ course }) {
         <Link
             to={`/courses/${course.id}`}
             state={{ course }}
-            className="border group border-gray-200 rounded-2xl shadow hover:shadow-xl hover:-translate-y-4 transition overflow-hidden flex flex-col lg:col-span-1 col-span-2"
-        >
+            className="border group border-gray-200 rounded-2xl shadow hover:shadow-xl hover:-translate-y-4 transition overflow-hidden flex flex-col md:col-span-1 col-span-2">
+      
             <div className="relative max-h-[292px] w-full">
                 <img src={course.image} alt={course.title} className="object-cover w-full h-full" />
                 <span className="absolute top-3 left-3 bg-black text-white text-xs px-3 py-2 rounded-xl">

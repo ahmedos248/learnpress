@@ -1,8 +1,8 @@
 import React from 'react'
 const Amazing = () => {
   return (
-    <section className="px-4 py-5 md:px-20 bg-white">
-      <div className="w-full py-16 px-6 bg-gradient-to-r from-red-200 via-purple-200 to-blue-200 relative rounded-2xl overflow-hidden">
+    <section className="px-6 py-5 md:px-20 bg-white mb-10">
+      <div className="w-full py-16 px-6 bg-gradient-to-r from-[#FEB6B6]  to-[#B7E1FF] relative rounded-2xl overflow-hidden">
         <div className="absolute top-1/2 left-0 -translate-y-1/2 hidden lg:block">
           <img
             src="/images/0026eec299e748c80d7a581e5b670825ce48a123.png"
@@ -24,14 +24,12 @@ const Amazing = () => {
         </div>
 
         <div className="absolute top-1/2 right-0 -translate-y-1/2 hidden lg:block">
-          
           <img
             src="/images/601032391cdf7810a372b7254f5d1e5903021b79.png"
             className="w-60 rounded-xl shadow-2xl rotate-[10deg] translate-x-[20px] translate-y-[20px]"
             alt=""
           />
 
-        
           <img
             src="/images/bccf72d9ab71dd46daac2cea5b2b705d4b2dd892.png"
             className="w-60 rounded-xl shadow-xl rotate-[-12deg] absolute top-[-70px] right-[80px]"
@@ -44,7 +42,6 @@ const Amazing = () => {
           />
         </div>
 
-   
         <div className="flex justify-center">
           <div className="flex flex-col items-center text-center relative z-10">
             <h2 className="font-bold tracking-wide text-sm md:text-base">

@@ -23,18 +23,18 @@ const feedbacks = [
 ];
 const Feedbacks = () => {
   return (
-    <section className="px-4 md:px-20 py-5 bg-white">
+    <section className="px-6 md:px-20 py-5 bg-white mb-10">
       <div className="text-center mb-10">
         <h1 className="text-3xl font-bold">Student feedbacks</h1>
         <p className="text-gray-500 mt-2">
           What Students Say About Academy LMS
         </p>
       </div>
-      <div className="max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mx-auto">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 mx-auto">
         {feedbacks.map((item, index) => (
           <div
             key={index}
-            className="border rounded-xl p-6 shadow-sm hover:shadow-md transition bg-white"
+            className="border rounded-xl p-6 shadow-sm hover:shadow-md transition bg-white py-10"
           >
             <FaQuoteLeft className="text-4xl text-gray-300 mb-4" />
 

@@ -17,7 +17,6 @@ const AllArticles = () => {
             <div className="lg:col-span-3">
                 <div className="flex flex-col lg:flex-row lg:justify-between items-start mb-8 space-y-4">
                     <h2 className="text-3xl font-semibold">All Articles</h2>
-
                     <div className="space-y-4">
                         <div className="flex justify-between space-x-2">
                             <div className="flex justify-between border-b-2 border-black max-w-sm">

@@ -1,36 +1,49 @@
-
 const Hero = () => {
   return (
-    
-    <section className="w-full bg-gradient-to-r from-yellow-100 to-green-200 min-h-[80vh] flex items-center relative">
-      <div className="container mx-auto px-6 grid lg:grid-cols-2 items-center relative z-20">
-        <div className="space-y-5">
-          <h1 className="text-7xl lg:text-5xl  font-bold leading-tight">
-            Build Skills With <br /> Online Course
+    <section className="relative w-full min-h-[90vh] bg-gradient-to-r from-[#FFF5BE] to-[#D0F7EA] overflow-hidden mb-20">
+      <img
+        src="/images/topHero.png"
+        alt=""
+        className="absolute top-0 right-0 opacity-20"
+      />
+
+      <img
+        src="/images/downHero.png"
+        alt=""
+        className="absolute bottom-0 left-0"
+      />
+      <img
+        src="/images/heroVector.png"
+        alt=""
+        className="absolute bottom-0 right-0 z-0"
+      />
+      <div className="container mx-auto px-6 min-h-[90vh] flex items-center justify-between relative z-10">
+        <div className="z-30">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+            Build Skills With <br />
+            <span className="text-black">Online Course</span>
           </h1>
 
-          <p className="text-gray-600 w-4/5">
+          <p className="mt-4 text-gray-600">
             We denounce with righteous indignation and dislike men who are so
             beguiled and demoralized that cannot trouble.
           </p>
 
-          <button className="bg-orange-500 text-white px-6 py-3 rounded-full shadow hover:bg-orange-600 flex items-center gap-2 cursor-pointer">
-            Post Comment
+          <button className="mt-6 bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition">
+            Posts Comment
           </button>
         </div>
-
-        {/* Image Section */}
-        <div className="relative h-full hidden min-h-[80vh] lg:flex justify-center">
+        <div className="relative hidden lg:flex justify-center items-center h-[90vh] w-full">
           <img
-            src="images/3aa92c10ac110af36413ad66b44dbdb4193e61f9 (1).png"
-            className="absolute top-40 left-1/2 -translate-x-1/2 w-full object-contain opacity-50 pointer-events-none select-none z-0"
-            alt="background text"
+            src="/images/image.png"
+            alt="Student"
+            className="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-auto object-cover drop-shadow-xl z-10"
           />
 
           <img
-            src="images/image.png"
-            alt="student"
-            className="relative h-full object-cover drop-shadow-xl z-10"
+            src="/images/3aa92c10ac110af36413ad66b44dbdb4193e61f9 (1).png"
+            className="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 w-full  opacity-50 z-0"
+            alt="background text"
           />
         </div>
       </div>
