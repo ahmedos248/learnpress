@@ -5,13 +5,13 @@ const FixedCourse = () => {
     const { state } = useLocation();
     const course = state?.course;
     return (
-        <div className="text-white space-y-6 z-10">
-            <div className="flex flex-row items-center space-x-4">
+        <div className="text-white w-full lg:w-auto space-y-6 z-10 justify-center flex flex-col items-stretch md:text-left text-center">
+            <div className="flex flex-row justify-center md:justify-start items-center space-x-4">
                 <button className="bg-[#555555] p-4 py-3 rounded-xl">Photography</button>
                 <p><span className="text-gray-400">by </span>Determined-Poitras</p>
             </div>
             <h1 className="lg:text-4xl md:text-2xl text-xl">The Ultimate Guide to the best WordPress LMS Plugin</h1>
-            <div className=" items-center flex flex-row flex-wrap justify-start space-x-5 space-y-0 md:text-sm text-[11px] md:text-gray-500 text-gray-300 md:mb-14">
+            <div className="flex justify-evenly w-full md:justify-start md:space-x-1 lg:space-x-4 md:text-sm text-[12px] md:text-gray-500 text-gray-300 md:mb-14">
                 <span className="flex items-center space-x-1">
                     <i className="fa-regular fa-clock text-orange-500"></i>
                     <span>2 Weeks</span>

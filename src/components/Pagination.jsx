@@ -2,6 +2,8 @@ import React from "react";
 import { IconButton } from "@material-tailwind/react";
 
 export function Pagination({ currentPage, totalPages, goTo, next, prev }) {
+if (Number(totalPages) <= 1) return null;
+  
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   return (
