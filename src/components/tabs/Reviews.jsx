@@ -26,25 +26,23 @@ const Reviews = () => {
             <div className="mt-6 space-y-6">
                 {currentData.length > 0 ? (
                     currentData.map((comment) => (
-                        <React.Fragment key={comment.id}>
-                            <div key={comment.id} className="flex gap-4 border-t pt-4 h-36">
-                                <img
-                                    src={comment.avatar}
-                                    alt={comment.name}
-                                    className="w-12 h-12 object-cover"
-                                />
-                                <div className="flex-1">
-                                    <div className="flex justify-between items-center">
-                                        <span className="font-semibold">{comment.name}</span>
-                                        <span className="text-sm text-gray-500">{comment.date}</span>
-                                    </div>
-                                    <p className="text-gray-700 mt-1">{comment.text}</p>
-                                    <button className="flex items-center gap-1 text-red-500 text-sm mt-2">
-                                        <i className="fas fa-reply"></i> Reply
-                                    </button>
+                        <div key={comment.id} className="flex gap-4 border-t pt-4 h-36">
+                            <img
+                                src={comment.avatar}
+                                alt={comment.name}
+                                className="w-12 h-12 object-cover"
+                            />
+                            <div className="flex-1">
+                                <div className="flex justify-between items-center">
+                                    <span className="font-semibold">{comment.name}</span>
+                                    <span className="text-sm text-gray-500">{comment.date}</span>
                                 </div>
+                                <p className="text-gray-700 mt-1">{comment.text}</p>
+                                <button className="flex items-center gap-1 text-red-500 text-sm mt-2">
+                                    <i className="fas fa-reply"></i> Reply
+                                </button>
                             </div>
-                        </React.Fragment>
+                        </div>
                     ))
                 ) : (
                     <p>No courses found</p>
