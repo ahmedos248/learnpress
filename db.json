@@ -217,152 +217,171 @@
             "instructor": "Saleh Mohamed"
         }
     ],
-    "articles": [
-        {
-            "id": 1,
-            "image": "/images/Image1.jpg",
-            "title": "Best LearnPress WordPress Theme Collection for 2023",
-            "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 2,
-            "image": "/images/Image2.jpg",
-            "title": "Best LearnPress WordPress Theme Collection for 2023",
-            "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 3,
-            "image": "/images/Image3.jpg",
-            "title": "Best LearnPress WordPress Theme Collection for 2023",
-            "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 4,
-            "image": "/images/Image4.jpg",
-            "title": "Best LearnPress WordPress Theme Collection for 2023",
-            "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 5,
-            "image": "/images/Image5.jpg",
-            "title": "Best LearnPress WordPress Theme Collection for 2023",
-            "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 6,
-            "image": "/images/Image6.jpg",
-            "title": "Best LearnPress WordPress Theme Collection for 2023",
-            "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 7,
-            "image": "/images/Image7.jpg",
-            "title": "Best LearnPress WordPress Theme Collection for 2024",
-            "description": "New updates for LearnPress WordPress Theme...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 8,
-            "image": "/images/Image8.jpg",
-            "title": "How to Optimize LearnPress Courses",
-            "description": "Tips & tricks for better course layouts...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 9,
-            "image": "/images/Image9.jpg",
-            "title": "LearnPress Theme Customization Guide",
-            "description": "Step by step theme customization...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 10,
-            "image": "/images/Image10.jpg",
-            "title": "Top 10 Plugins for LearnPress",
-            "description": "Must-have plugins for better functionality...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 11,
-            "image": "/images/Image11.jpg",
-            "title": "LearnPress SEO Tips",
-            "description": "How to improve your LearnPress SEO...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 12,
-            "image": "/images/Image12.jpg",
-            "title": "LearnPress Advanced Features",
-            "description": "Discover advanced LearnPress features...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 13,
-            "image": "/images/Image13.jpg",
-            "title": "LearnPress Performance Boost",
-            "description": "Boost your LearnPress speed...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 14,
-            "image": "/images/Image14.jpg",
-            "title": "LearnPress Mobile Optimization",
-            "description": "Optimizing LearnPress for mobile...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 15,
-            "image": "/images/Image15.jpg",
-            "title": "LearnPress Security Best Practices",
-            "description": "Keep your courses secure...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 16,
-            "image": "/images/Image16.jpg",
-            "title": "LearnPress Beginner Mistakes",
-            "description": "Common mistakes to avoid...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 17,
-            "image": "/images/Image17.jpg",
-            "title": "LearnPress Plugin Integration",
-            "description": "Integrate your favorite plugins...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        },
-        {
-            "id": 18,
-            "image": "/images/Image18.jpg",
-            "title": "LearnPress Course Analytics",
-            "description": "Track your course performance...",
-            "details1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet.",
-            "details2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis faucibus odio arcu duis dui, adipiscing facilisis. Urna, donec turpis egestas volutpat. Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel enim eu turpis imperdiet."
-        }
-    ],
+   "articles": [
+    {
+        "id": 1,
+        "image": "/images/Image1.jpg",
+        "title": "Best LearnPress WordPress Theme Collection for 2023",
+        "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "category": "Academy",
+        "date": "2025-11-18"
+    },
+    {
+        "id": 2,
+        "image": "/images/Image2.jpg",
+        "title": "Best LearnPress WordPress Theme Collection for 2023",
+        "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2025-12-02"
+    },
+    {
+        "id": 3,
+        "image": "/images/Image3.jpg",
+        "title": "Best LearnPress WordPress Theme Collection for 2023",
+        "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2025-12-21"
+    },
+    {
+        "id": 4,
+        "image": "/images/Image4.jpg",
+        "title": "Best LearnPress WordPress Theme Collection for 2023",
+        "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-01-07"
+    },
+    {
+        "id": 5,
+        "image": "/images/Image5.jpg",
+        "title": "Best LearnPress WordPress Theme Collection for 2023",
+        "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-01-19"
+    },
+    {
+        "id": 6,
+        "image": "/images/Image6.jpg",
+        "title": "Best LearnPress WordPress Theme Collection for 2023",
+        "description": "Looking for an amazing & well-functional LearnPress WordPress Theme?...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-02-03"
+    },
+    {
+        "id": 7,
+        "image": "/images/Image7.jpg",
+        "title": "Best LearnPress WordPress Theme Collection for 2024",
+        "description": "New updates for LearnPress WordPress Theme...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-02-17"
+    },
+    {
+        "id": 8,
+        "image": "/images/Image8.jpg",
+        "title": "How to Optimize LearnPress Courses",
+        "description": "Tips & tricks for better course layouts...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-03-01"
+    },
+    {
+        "id": 9,
+        "image": "/images/Image9.jpg",
+        "title": "LearnPress Theme Customization Guide",
+        "description": "Step by step theme customization...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-03-14"
+    },
+    {
+        "id": 10,
+        "image": "/images/Image10.jpg",
+        "title": "Top 10 Plugins for LearnPress",
+        "description": "Must-have plugins for better functionality...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-04-02"
+    },
+    {
+        "id": 11,
+        "image": "/images/Image11.jpg",
+        "title": "LearnPress SEO Tips",
+        "description": "How to improve your LearnPress SEO...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-04-18"
+    },
+    {
+        "id": 12,
+        "image": "/images/Image12.jpg",
+        "title": "LearnPress Advanced Features",
+        "description": "Discover advanced LearnPress features...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-05-03"
+    },
+    {
+        "id": 13,
+        "image": "/images/Image13.jpg",
+        "title": "LearnPress Performance Boost",
+        "description": "Boost your LearnPress speed...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-05-21"
+    },
+    {
+        "id": 14,
+        "image": "/images/Image14.jpg",
+        "title": "LearnPress Mobile Optimization",
+        "description": "Optimizing LearnPress for mobile...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-06-07"
+    },
+    {
+        "id": 15,
+        "image": "/images/Image15.jpg",
+        "title": "LearnPress Security Best Practices",
+        "description": "Keep your courses secure...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-06-26"
+    },
+    {
+        "id": 16,
+        "image": "/images/Image16.jpg",
+        "title": "LearnPress Beginner Mistakes",
+        "description": "Common mistakes to avoid...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-07-11"
+    },
+    {
+        "id": 17,
+        "image": "/images/Image17.jpg",
+        "title": "LearnPress Plugin Integration",
+        "description": "Integrate your favorite plugins...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2024-07-29"
+    },
+    {
+        "id": 18,
+        "image": "/images/Image18.jpg",
+        "title": "LearnPress Course Analytics",
+        "description": "Track your course performance...",
+        "details1": "Lorem ipsum dolor sit amet...",
+        "details2": "Lorem ipsum dolor sit amet...",
+        "date": "2025-01-10"
+    }
+],
     "comments": [
         {
             "id": 1,
