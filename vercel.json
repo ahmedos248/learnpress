@@ -1,0 +1,8 @@
+{
+    "version": 3,
+    "functions": {
+        "api/**/*.js": {
+            "runtime": "vercel-nodejs@2.0.0"
+        }
+    }
+}
