@@ -19,6 +19,8 @@ export default function handler(req, res) {
     req.url = req.url.replace(/^\/api\/db/, "") || "/";
 
     middlewares(req, res, () => {
-        router(req, res, () => res.status(404).json({ error: "Route not found" }));
+        router(req, res, () => {
+            res.status(404).json({ error: "Route not found" });
+        });
     });
 }

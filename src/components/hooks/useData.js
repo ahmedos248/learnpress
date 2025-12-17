@@ -17,11 +17,10 @@ export default function useData() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    // Switch base URL for local dev vs Vercel
     const baseURL =
         import.meta.env.DEV
-            ? "http://localhost:5000" // local JSON Server
-            : "/api/db"; // Vercel serverless API
+            ? "http://localhost:5000"
+            : "/api/db";
 
     const fetchData = async (resource, setter) => {
         try {
