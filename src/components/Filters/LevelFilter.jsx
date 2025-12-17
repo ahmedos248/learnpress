@@ -3,14 +3,15 @@ import React from "react";
 const levels = ["Beginner", "Intermediate", "Expert"];
 
 const LevelFilter = ({ filters, setFilters, courses }) => {
-  const toggleLevels = (level) => {
-    setFilters((prev) => ({
-      ...prev,
-      levels: prev.levels?.includes(level)
-        ? prev.levels.filter((c) => c !== level)
-        : [...(prev.levels || []), level],
-    }));
-  };
+ const toggleLevels = (level) => {
+   setFilters((prev) => ({
+     ...prev,
+     levels: prev?.levels?.includes(level)
+       ? prev.levels.filter((c) => c !== level)
+       : [...(prev.levels || []), level],
+   }));
+ };
+
  const getCount = (l) => courses.filter((course) => course.level === l).length;
 
   return (

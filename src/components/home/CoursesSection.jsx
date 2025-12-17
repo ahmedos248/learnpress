@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CoursesSection = ({ courses = [] }) => {
 
   return (
-    <section className="px-6 md:px-20 py-5 bg-white mb-10">
+    <section className="max-w-screen-xl mx-auto px-8 py-5 bg-white mb-10">
       <div className="flex justify-between items-center mb-10">
         <div>
           <h2 className="text-3xl font-semibold">Featured courses</h2>

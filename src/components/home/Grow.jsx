@@ -11,7 +11,7 @@ const features = [
 
 const Grow = () => {
   return (
-    <section className="px-6 py-10 md:px-20 bg-white mb-10">
+    <section className="max-w-screen-xl mx-auto px-8 py-5 bg-white mb-10">
       <div className="flex flex-col lg:flex-row justify-between gap-10 md:gap-20 p-4">
         <div className="w-full lg:w-1/2 flex justify-center">
           <img

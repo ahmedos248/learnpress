@@ -7,9 +7,9 @@ const boxs = [
 ];
 const Rate = () => {
   return (
-    <section className="py-5 px-6 md:px-20 mb-10">
+    <section className="max-w-screen-xl mx-auto px-8 py-5 mb-10">
       <div className="w-full py-16 ">
-        <div className=" mx-auto grid grid-cols-1 md:grid-cols-4 gap-7">
+        <div className=" mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
           {boxs.map((box, index) => (
             <div
               key={index}
