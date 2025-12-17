@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const SearchBar = ({ title, searchValue, setSearchValue, active, setActive }) => {
     return (
@@ -35,7 +35,7 @@ const SearchBar = ({ title, searchValue, setSearchValue, active, setActive }) =>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default SearchBar;

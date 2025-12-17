@@ -4,9 +4,20 @@ import usePagination from "./hooks/usePagination";
 import { Pagination } from "./Pagination";
 import SearchBar from "./SearchBar";
 import SliderArticles from "./SliderArticles";
+
 const AllArticles = () => {
-  const { filteredArticles, articleSearch, setArticleSearch, active, setActive, loading, error } = useData();
-  const { currentData, currentPage, totalPages, goTo, next, prev } = usePagination(filteredArticles, 6);
+  const {
+    filteredArticlesLocal,
+    articleSearch,
+    setArticleSearch,
+    active,
+    setActive,
+    loading,
+    error,
+  } = useData();
+
+  const { currentData, currentPage, totalPages, goTo, next, prev } =
+    usePagination(filteredArticlesLocal, 6);
 
   if (loading) return <p className="text-center mt-20">Loading articles...</p>;
   if (error) return <p className="text-center mt-20 text-red-500">{error}</p>;
@@ -21,9 +32,7 @@ const AllArticles = () => {
           active={active}
           setActive={setActive}
         />
-
         <Stagger data={currentData} type="article" active={active} />
-
         <div className="mt-8 flex justify-center">
           <Pagination
             currentPage={currentPage}
@@ -34,8 +43,8 @@ const AllArticles = () => {
           />
         </div>
       </div>
-      <div className=" lg:col-span-1 lg:flex lg:flex-col space-y-6 mb-10 hidden ">
-        <SliderArticles articles={filteredArticles} />
+      <div className="lg:col-span-1 lg:flex lg:flex-col space-y-6 mb-10 hidden">
+        <SliderArticles articles={filteredArticlesLocal} />
       </div>
     </section>
   );

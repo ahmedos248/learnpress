@@ -10,15 +10,15 @@ function App() {
     filteredArticles,
     courses,
     articles,
-    searchQuery,
-    setSearchQuery,
+    globalSearch,
+    setGlobalSearch,
   } = useData();
 
   return (
     <div className="flex flex-col min-h-screen w-full relative exo-text">
       <ScrollToTop />
 
-      <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <Header searchQuery={globalSearch} setSearchQuery={setGlobalSearch} />
 
       <main className="mt-14">
         <Outlet

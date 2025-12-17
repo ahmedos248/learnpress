@@ -12,25 +12,29 @@ import CoursesSection from "../components/home/CoursesSection";
 import ArticalsSection from "../components/home/ArticalsSection";
 
 const Home = () => {
-  const {
-    filteredCourses = [],
-    filteredArticles = [],
-    courseSearch = "",
-    articleSearch = "",
-  } = useOutletContext();
+  const { filteredCourses, filteredArticles, globalSearch, setGlobalSearch } =
+    useOutletContext();
 
   return (
     <div>
       <Hero />
       <Categories />
-      <CoursesSection courses={filteredCourses} searchQuery={courseSearch} />
+      <CoursesSection
+        courses={filteredCourses}
+        searchQuery={globalSearch}
+        setSearchQuery={setGlobalSearch}
+      />
       <ExploreSection />
       <Rate />
       <Grow />
       <Amazing />
       <Feedbacks />
       <Academy />
-      <ArticalsSection articles={filteredArticles} searchQuery={articleSearch} />
+      <ArticalsSection
+        articles={filteredArticles}
+        searchQuery={globalSearch}
+        setSearchQuery={setGlobalSearch}
+      />
     </div>
   );
 };

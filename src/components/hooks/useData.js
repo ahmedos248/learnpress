@@ -9,7 +9,10 @@ export default function useData() {
     const [filteredArticles, setFilteredArticles] = useState([]);
     const [filteredComments, setFilteredComments] = useState([]);
 
-    const [searchQuery, setSearchQuery] = useState(""); // single global search
+    const [globalSearch, setGlobalSearch] = useState("");
+    const [courseSearch, setCourseSearch] = useState("");
+    const [articleSearch, setArticleSearch] = useState("");
+
     const [active, setActive] = useState("b");
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -45,9 +48,8 @@ export default function useData() {
         return () => controller.abort();
     }, []);
 
-    // filter courses and articles based on global searchQuery
     useEffect(() => {
-        const q = searchQuery.toLowerCase();
+        const q = globalSearch.toLowerCase();
 
         setFilteredCourses(
             courses.filter(
@@ -61,12 +63,24 @@ export default function useData() {
             articles.filter(
                 a =>
                     (a.title ?? "").toLowerCase().includes(q) ||
-                    (a.category ?? "").toLowerCase().includes(q)
+                    (a.description ?? "").toLowerCase().includes(q)
             )
         );
 
-        setFilteredComments(comments); // optional
-    }, [searchQuery, courses, articles, comments]);
+        setFilteredComments(comments);
+    }, [globalSearch, courses, articles, comments]);
+
+    const filteredCoursesLocal = courses.filter(
+        c =>
+            (c.title ?? "").toLowerCase().includes(courseSearch.toLowerCase()) ||
+            (c.category ?? "").toLowerCase().includes(courseSearch.toLowerCase())
+    );
+
+    const filteredArticlesLocal = articles.filter(
+        a =>
+            (a.title ?? "").toLowerCase().includes(articleSearch.toLowerCase()) ||
+            (a.description ?? "").toLowerCase().includes(articleSearch.toLowerCase())
+    );
 
     return {
         courses,
@@ -75,8 +89,14 @@ export default function useData() {
         filteredCourses,
         filteredArticles,
         filteredComments,
-        searchQuery,
-        setSearchQuery,
+        filteredCoursesLocal,
+        filteredArticlesLocal,
+        globalSearch,
+        setGlobalSearch,
+        courseSearch,
+        setCourseSearch,
+        articleSearch,
+        setArticleSearch,
         active,
         setActive,
         loading,

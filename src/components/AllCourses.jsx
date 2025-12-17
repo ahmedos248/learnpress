@@ -8,10 +8,8 @@ import useCourseFilter from "./hooks/useCourseFilter";
 import Stagger from "./cards/Stagger";
 
 const AllCourses = () => {
-
-
   const {
-    filteredCourses,
+    filteredCoursesLocal,
     courseSearch,
     setCourseSearch,
     active,
@@ -20,7 +18,7 @@ const AllCourses = () => {
     error,
   } = useData();
 
-  const { filtered, filters, setFilters } = useCourseFilter(filteredCourses);
+  const { filtered, filters, setFilters } = useCourseFilter(filteredCoursesLocal);
   const { currentData, currentPage, totalPages, goTo, next, prev } =
     usePagination(filtered, 6);
 
@@ -30,11 +28,7 @@ const AllCourses = () => {
   return (
     <section className="max-w-screen-xl mx-auto px-6 py-12 bg-white exo-text lg:grid lg:grid-cols-4 gap-10">
       <div className="flex justify-end lg:hidden">
-        <MobileFilter
-          filters={filters}
-          setFilters={setFilters}
-          courses={filteredCourses}
-        />
+        <MobileFilter filters={filters} setFilters={setFilters} courses={filteredCoursesLocal} />
       </div>
       <div className="order-2 lg:order-1 lg:col-span-3">
         <SearchBar
@@ -46,21 +40,11 @@ const AllCourses = () => {
         />
         <Stagger key={currentPage} data={currentData} type="course" active={active} />
         <div className="mt-8 flex justify-center">
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            goTo={goTo}
-            next={next}
-            prev={prev}
-          />
+          <Pagination currentPage={currentPage} totalPages={totalPages} goTo={goTo} next={next} prev={prev} />
         </div>
       </div>
-      <div className=" col-span-1 lg:flex flex-col hidden space-y-6 mb-10">
-        <Filters
-          filters={filters}
-          setFilters={setFilters}
-          courses={filteredCourses}
-        />
+      <div className="col-span-1 lg:flex flex-col hidden space-y-6 mb-10">
+        <Filters filters={filters} setFilters={setFilters} courses={filteredCoursesLocal} />
       </div>
     </section>
   );
