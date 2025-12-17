@@ -19,8 +19,8 @@ export default function useData() {
 
     // ✅ Update this to your Railway URL in production
     const baseURL = import.meta.env.DEV
-        ? "http://localhost:5000" // local JSON Server
-        : "https://<your-railway-project>.up.railway.app"; // Railway deployed JSON Server
+        ? "http://localhost:5000"                     // local dev
+        : "https://learnpress-production.up.railway.app"; // production Railway URL
 
     const fetchData = async (resource, setter) => {
         try {
