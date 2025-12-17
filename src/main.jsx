@@ -13,7 +13,7 @@ import Courses from './pages/Courses.jsx';
 import CourseDetails from './pages/CourseDetails.jsx';
 import Contact from './pages/Contact.jsx';
 import Erorr from './pages/Erorr.jsx'
-
+import SignPage from './pages/SignPage.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,6 +26,7 @@ const router = createBrowserRouter([
       { path: "courses", element: <Courses /> },
       { path: "courses/:id", element: <CourseDetails /> },
       { path: "contact", element: <Contact /> },
+      { path: "Login-Register", element: <SignPage /> },
       { path: "*", element: <Erorr /> },
     ],
   },
