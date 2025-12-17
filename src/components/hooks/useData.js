@@ -37,9 +37,9 @@ export default function useData() {
 
         const loadAll = async () => {
             await Promise.all([
-                fetchData("http://localhost:5000/courses", setCourses),
-                fetchData("http://localhost:5000/articles", setArticles),
-                fetchData("http://localhost:5000/comments", setComments)
+                fetchData("/api/db/courses", setCourses),
+                fetchData("/api/db/articles", setArticles),
+                fetchData("/api/db/comments", setComments)
             ]);
             setLoading(false);
         };
