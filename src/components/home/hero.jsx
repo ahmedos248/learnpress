@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-[90vh] bg-gradient-to-r from-[#FFF5BE] to-[#D0F7EA] overflow-hidden mb-20">
+    <section className="relative w-full min-h-[90vh] bg-gradient-to-r from-[#FFF5BE] to-[#D0F7EA] overflow-hidden mb-20 lg:ps-28">
       <img
         src="/images/topHero.png"
         alt=""

@@ -23,7 +23,7 @@ const AllArticles = () => {
   if (error) return <p className="text-center mt-20 text-red-500">{error}</p>;
 
   return (
-    <section className="max-w-screen-xl mx-auto px-6 py-12 bg-white exo-text lg:grid lg:grid-cols-4 gap-10">
+    <section className="max-w-screen-xl mx-auto px-8 py-12 bg-white exo-text lg:grid lg:grid-cols-4 gap-10">
       <div className="lg:col-span-3">
         <SearchBar
           title="All Articles"

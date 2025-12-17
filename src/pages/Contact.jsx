@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <div>
             <Breadcrumb />
-            <div className='exo-text max-w-screen-xl mx-auto px-6 flex md:justify-between flex-col md:flex-row gap-4 mt-14 mb-10'>
+            <div className='exo-text max-w-screen-xl mx-auto px-8 flex md:justify-between flex-col md:flex-row gap-4 mt-14 mb-10'>
                 <div className='flex flex-col space-y-2'>
                     <h1 className='mb-8 text-4xl font-semibold'>Need a direct line?</h1>
                     <p className='text-gray-500'>Cras massa et odio donec faucibus in. Vitae pretium massa dolor ullamcorper lectus elit quam.</p>

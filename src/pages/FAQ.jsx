@@ -65,10 +65,10 @@ const FAQ = () => {
     <div>
       <Breadcrumb />
 
-      <section className="max-w-screen-xl mx-auto px-6 py-12 bg-white">
+      <section className="max-w-screen-xl mx-auto px-8 py-12 bg-white">
         <h1 className="text-4xl font-bold py-8">FAQs</h1>
 
-      
+
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-1 flex flex-col gap-6 w-full">
             {leftColumn.map((FAQ, index) => (
