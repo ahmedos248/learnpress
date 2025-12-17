@@ -1,7 +1,7 @@
 import React from 'react'
 const Amazing = () => {
   return (
-    <section className="px-6 py-5 md:px-20 bg-white mb-10">
+    <section className="max-w-screen-xl mx-auto px-8 py-5 bg-white mb-10">
       <div className="w-full py-16 px-6 bg-gradient-to-r from-[#FEB6B6]  to-[#B7E1FF] relative rounded-2xl overflow-hidden">
         <div className="absolute top-1/2 left-0 -translate-y-1/2 hidden lg:block">
           <img

@@ -2,7 +2,7 @@ import { IoSchoolSharp } from "react-icons/io5";
 
 const Academy = () => {
   return (
-    <section className="px-6 md:px-20 py-5 bg-white mb-10">
+    <section className="max-w-screen-xl mx-auto px-8 py-5 bg-white mb-10">
       <div className="w-full py-10 md:py-16 px-4 md:px-6 bg-gradient-to-r from-[#C7E6F9]  to-[#E8D1FE] relative rounded-2xl overflow-hidden">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0">
           <div className="flex flex-col sm:flex-row items-center text-center sm:text-left">

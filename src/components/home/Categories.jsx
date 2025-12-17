@@ -19,7 +19,7 @@ import {
 
 const Categories = () => {
   return (
-    <section className="px-6 md:px-20 py-5 bg-white mb-10">
+    <section className="max-w-screen-xl mx-auto px-8 py-5 bg-white mb-10">
       <div>
         <div className="flex justify-between items-center mb-10">
           <div>
