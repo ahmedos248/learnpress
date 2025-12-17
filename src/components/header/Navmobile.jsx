@@ -49,14 +49,14 @@ const Navmobile = ({ searchQuery, setSearchQuery }) => {
             {navItems.map((item, idx) => {
               if (item.dropdown) {
                 return (
-                  <li key={idx} className=" hover:text-orange-500 w-fit">
+                  <li  key={idx} className=" hover:text-orange-500 w-fit">
                     <Menu>
                       <MenuHandler className="cursor-pointer">
                         <div>{item.text}</div>
                       </MenuHandler>
-                      <MenuList className="mt-2 ms-8 p-1">
+                      <MenuList  className="mt-2 ms-8 p-1">
                         {item.menuItems.map((m, i) => (
-                          <MenuItem key={i} className="hover:text-orange-500">
+                          <MenuItem onClick={()=>setOpen(false)} key={i} className="hover:text-orange-500">
                             {m}
                           </MenuItem>
                         ))}
@@ -73,6 +73,7 @@ const Navmobile = ({ searchQuery, setSearchQuery }) => {
                   {item.to ? (
                     <Wrapper
                       smooth={item.hash}
+                      onClick={() => setOpen(false)}
                       to={item.to}
                       className={`block hover:text-orange-500 ${
                         isActive ? "text-orange-500" : ""
@@ -81,7 +82,10 @@ const Navmobile = ({ searchQuery, setSearchQuery }) => {
                       {item.text}
                     </Wrapper>
                   ) : (
-                    <span className="block hover:text-orange-500 cursor-pointer">
+                    <span
+                      onClick={() => setOpen(false)}
+                       className="block hover:text-orange-500 cursor-pointer"
+                    >
                       {item.text}
                     </span>
                   )}
@@ -91,6 +95,7 @@ const Navmobile = ({ searchQuery, setSearchQuery }) => {
           </ul>
           <Link
             to="/Login-Register"
+            onClick={() => setOpen(false)}
             className="w-full mt-2 flex justify-center items-center font-semibold border-2 border-orange-500 p-3 rounded-md hover:bg-orange-500 hover:text-white transition"
           >
             Login / Register
