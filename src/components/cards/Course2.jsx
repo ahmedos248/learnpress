@@ -1,13 +1,9 @@
-import { Link } from "react-router-dom";
-import useSlugify from "../hooks/useSlugify";
+import MotionButton from "./MotionButton";
 
 export default function Course2({ course }) {
-  const slugify = useSlugify();
 
   return (
-    <Link
-      to={`/courses/${course.id}-${slugify(course.title)}`}
-      state={{ course }}
+    <div
       className="border relative group h-[250px] border-gray-200 rounded-2xl shadow hover:shadow-xl hover:-translate-y-4 transition overflow-hidden flex p-0 col-span-2"
     >
       <div className="lg:relative absolute lg:h-[250px] lg:w-[410px] w-full h-full ">
@@ -20,7 +16,7 @@ export default function Course2({ course }) {
           Photography
         </span>
       </div>
-      <div className="relative p-4 pb-0 w-[580px] flex flex-col md:justify-between space-y-4 z-10">
+      <div className="relative p-4 pb-0 flex flex-col md:justify-between space-y-4 z-10 w-full">
         <span className="md:hidden w-24 bg-black text-center text-white text-xs px-3 py-2 rounded-xl">
           Photography
         </span>
@@ -37,7 +33,7 @@ export default function Course2({ course }) {
           </span>
         </h3>
 
-        <div className="grid items-center grid-cols-2 space-y-1 md:flex md:flex-row md:space-x-4 md:space-y-0 lg:text-sm text-xs text-gray-500 md:mb-14">
+        <div className=" flex justify-between lg:text-sm md:text-base text-xs sm:text-sm text-gray-500 md:mb-14">
           <span className="flex items-center space-x-1">
             <i className="fa-regular fa-clock text-orange-500"></i>
             <span>2 Weeks</span>
@@ -65,9 +61,9 @@ export default function Course2({ course }) {
               {course.disc}
             </span>
           </span>
-          <button className="hover:underline font-medium">View More</button>
+          <MotionButton course={course} />
         </div>
       </div>
-    </Link>
+    </div>
   );
 }

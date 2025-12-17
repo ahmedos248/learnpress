@@ -7,12 +7,11 @@ export default function Article1({ article }) {
     return (
         <Link
             to={`/blog/${article.id}-${slugify(article.title)}`}
-
             state={{ article }}
             className="border group border-gray-200 rounded-2xl shadow hover:shadow-xl hover:-translate-y-4 transition overflow-hidden flex flex-col md:col-span-1 col-span-2"
         >
             <div className="relative max-h-[292px] w-full">
-                <img src={article.image} alt={article.title} className="object-cover w-full h-full" />
+                <img src={article.image} alt={article.title} className="object-cover w-full h-full max-h-[222px] sm:max-h-[170px] md:max-h-[222px]" />
             </div>
             <div className="p-4 space-y-4 flex-1">
                 <h3 className="relative max-h-14 md:text-lg text-sm font-semibold text-gray-800 mb-3 group-hover:text-orange-500 transition-all duration-300">

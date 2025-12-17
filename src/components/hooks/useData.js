@@ -4,12 +4,12 @@ export default function useData() {
     const [courses, setCourses] = useState([]);
     const [articles, setArticles] = useState([]);
     const [comments, setComments] = useState([]);
+
     const [filteredCourses, setFilteredCourses] = useState([]);
     const [filteredArticles, setFilteredArticles] = useState([]);
     const [filteredComments, setFilteredComments] = useState([]);
 
-    const [courseSearch, setCourseSearch] = useState("");
-    const [articleSearch, setArticleSearch] = useState("");
+    const [searchQuery, setSearchQuery] = useState(""); // single global search
     const [active, setActive] = useState("b");
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -30,7 +30,6 @@ export default function useData() {
     useEffect(() => {
         setLoading(true);
         setError(null);
-
         const controller = new AbortController();
 
         const loadAll = async () => {
@@ -43,40 +42,31 @@ export default function useData() {
         };
 
         loadAll();
-
         return () => controller.abort();
     }, []);
 
+    // filter courses and articles based on global searchQuery
     useEffect(() => {
-        let result = courses ?? [];
-        if (courseSearch.trim()) {
-            const q = courseSearch.toLowerCase();
-            result = result.filter(
-                (course) =>
-                    String(course.title ?? "").toLowerCase().includes(q) ||
-                    String(course.category ?? "").toLowerCase().includes(q)
-            );
-        }
-        setFilteredCourses(result);
-    }, [courseSearch, courses]);
+        const q = searchQuery.toLowerCase();
 
-    useEffect(() => {
-        let result = articles ?? [];
-        if (articleSearch.trim()) {
-            const q = articleSearch.toLowerCase();
-            result = result.filter(
-                (article) =>
-                    String(article.title ?? "").toLowerCase().includes(q) ||
-                    String(article.category ?? "").toLowerCase().includes(q)
-            );
-        }
-        setFilteredArticles(result);
-    }, [articleSearch, articles]);
+        setFilteredCourses(
+            courses.filter(
+                c =>
+                    (c.title ?? "").toLowerCase().includes(q) ||
+                    (c.category ?? "").toLowerCase().includes(q)
+            )
+        );
 
-    useEffect(() => {
-        let result = comments ?? [];
-        setFilteredComments(result);
-    }, [comments]);
+        setFilteredArticles(
+            articles.filter(
+                a =>
+                    (a.title ?? "").toLowerCase().includes(q) ||
+                    (a.category ?? "").toLowerCase().includes(q)
+            )
+        );
+
+        setFilteredComments(comments); // optional
+    }, [searchQuery, courses, articles, comments]);
 
     return {
         courses,
@@ -85,10 +75,8 @@ export default function useData() {
         filteredCourses,
         filteredArticles,
         filteredComments,
-        courseSearch,
-        setCourseSearch,
-        articleSearch,
-        setArticleSearch,
+        searchQuery,
+        setSearchQuery,
         active,
         setActive,
         loading,

@@ -1,13 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import useData from "../hooks/useData";
 import Article1 from '../cards/Article1';
-const ArticalsSection = () => {
-      const { filteredArticles, loading, error } = useData();
+const ArticalsSection = ({ articles = [] }) => {
 
-        if (loading) return <p className="text-center mt-20">Loading articles...</p>;
-        if (error) return <p className="text-center mt-20 text-red-500">{error}</p>;
-    
   return (
     <section className="px-6 md:px-20 py-5 bg-white mb-10">
       <div className="flex justify-between items-center mb-10">
@@ -23,8 +18,8 @@ const ArticalsSection = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4">
-        {filteredArticles.length > 0 ? (
-          filteredArticles
+        {articles.length > 0 ? (
+          articles
             .slice(0, 6)
             .map((article) => <Article1 key={article.id} article={article} />)
         ) : (

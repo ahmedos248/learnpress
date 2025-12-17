@@ -1,17 +1,14 @@
-import { Link } from "react-router-dom";
-import useSlugify from "../hooks/useSlugify";
+import MotionButton from "./MotionButton";
 
 export default function Course1({ course }) {
-    const slugify = useSlugify();
 
     return (
-        <Link
-            to={`/courses/${course.id}-${slugify(course.title)}`}
-            state={{ course }}
+        <div
+
             className="border group border-gray-200 rounded-2xl shadow hover:shadow-xl hover:-translate-y-4 transition overflow-hidden flex flex-col md:col-span-1 col-span-2">
-      
+
             <div className="relative max-h-[292px] w-full">
-                <img src={course.image} alt={course.title} className="object-cover w-full h-full" />
+                <img src={course.image} alt={course.title} className="object-cover w-full h-[222px] sm:h-[170px] md:h-[222px]" />
                 <span className="absolute top-3 left-3 bg-black text-white text-xs px-3 py-2 rounded-xl">
                     Photography
                 </span>
@@ -40,9 +37,9 @@ export default function Course1({ course }) {
                     <s className="text-gray-400">{course.price}</s>
                     <span className={`${course.disc === "Free" ? "text-green-500" : "text-red-500"}`}>{course.disc}</span>
                 </span>
-                <button className="hover:underline font-medium">View More</button>
+                <MotionButton course={course} />
             </div>
-        </Link>
+        </div>
     );
 }
 

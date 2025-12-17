@@ -1,17 +1,14 @@
-import React, { useState } from 'react'
-import Navbar from './Navbar'
-import Navmobile from './Navmobile'
+import React from "react";
+import Navbar from "./Navbar";
+import Navmobile from "./Navmobile";
 
-
-const Header = () => {
-    const [searchQuery, setSearchQuery] = useState("");
-
+const Header = ({ searchQuery, setSearchQuery }) => {
     return (
         <header>
             <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-            <Navmobile />
+            <Navmobile searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

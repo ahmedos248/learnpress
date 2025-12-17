@@ -13,7 +13,6 @@ export default function Search({ searchQuery, setSearchQuery }) {
         document.addEventListener("mousedown", handleClickOutside);
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
-
     return (
         <div className="relative inline-block" ref={wrapperRef}>
             <button

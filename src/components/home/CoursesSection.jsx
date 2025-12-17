@@ -1,14 +1,8 @@
 
-import useData from '../hooks/useData';
 import Course1 from '../cards/Course1';
 import { Link } from 'react-router-dom';
-const CoursesSection = () => {
-     const { filteredCourses, loading, error } = useData();
-      
-    
-        if (loading) return <p className="text-center mt-20 ">Loading courses...</p>;
-        if (error) return <p className="text-center mt-20 text-red-500">{error}</p>;
-    
+const CoursesSection = ({ courses = [] }) => {
+
   return (
     <section className="px-6 md:px-20 py-5 bg-white mb-10">
       <div className="flex justify-between items-center mb-10">
@@ -24,8 +18,8 @@ const CoursesSection = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4">
-        {filteredCourses.length > 0 ? (
-          filteredCourses
+        {courses.length > 0 ? (
+          courses
             .slice(0, 6)
             .map((course) => <Course1 key={course.id} course={course} />)
         ) : (
