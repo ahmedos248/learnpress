@@ -36,7 +36,7 @@ const AllCourses = () => {
           courses={filteredCourses}
         />
       </div>
-      <div className="order-2 lg:order-1 lg:col-span-3">
+      <div className=" lg:col-span-3">
         <SearchBar
           title="All Courses"
           searchValue={courseSearch}
