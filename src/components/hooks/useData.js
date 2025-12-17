@@ -17,17 +17,14 @@ export default function useData() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    const baseURL =
-        import.meta.env.DEV
-            ? "http://localhost:5000"
-            : "/api/db";
+    // ✅ Update this to your Railway URL in production
+    const baseURL = import.meta.env.DEV
+        ? "http://localhost:5000" // local JSON Server
+        : "https://<your-railway-project>.up.railway.app"; // Railway deployed JSON Server
 
     const fetchData = async (resource, setter) => {
         try {
-            const url = import.meta.env.DEV
-                ? `${baseURL}/${resource}`
-                : `${baseURL}/${resource}`;
-            const res = await fetch(url);
+            const res = await fetch(`${baseURL}/${resource}`);
             if (!res.ok) throw new Error(`HTTP error ${res.status}`);
             const data = await res.json();
             setter(Array.isArray(data) ? data : data?.[Object.keys(data)[0]] ?? []);
@@ -41,7 +38,6 @@ export default function useData() {
     useEffect(() => {
         setLoading(true);
         setError(null);
-        const controller = new AbortController();
 
         const loadAll = async () => {
             await Promise.all([
@@ -53,7 +49,6 @@ export default function useData() {
         };
 
         loadAll();
-        return () => controller.abort();
     }, []);
 
     useEffect(() => {
