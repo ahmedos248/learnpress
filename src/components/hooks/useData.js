@@ -17,8 +17,17 @@ export default function useData() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
-    const fetchData = async (url, setter) => {
+    // Switch base URL for local dev vs Vercel
+    const baseURL =
+        import.meta.env.DEV
+            ? "http://localhost:5000" // local JSON Server
+            : "/api/db"; // Vercel serverless API
+
+    const fetchData = async (resource, setter) => {
         try {
+            const url = import.meta.env.DEV
+                ? `${baseURL}/${resource}`
+                : `${baseURL}/${resource}`;
             const res = await fetch(url);
             if (!res.ok) throw new Error(`HTTP error ${res.status}`);
             const data = await res.json();
@@ -37,9 +46,9 @@ export default function useData() {
 
         const loadAll = async () => {
             await Promise.all([
-                fetchData("/api/db/courses", setCourses),
-                fetchData("/api/db/articles", setArticles),
-                fetchData("/api/db/comments", setComments)
+                fetchData("courses", setCourses),
+                fetchData("articles", setArticles),
+                fetchData("comments", setComments),
             ]);
             setLoading(false);
         };
@@ -53,7 +62,7 @@ export default function useData() {
 
         setFilteredCourses(
             courses.filter(
-                c =>
+                (c) =>
                     (c.title ?? "").toLowerCase().includes(q) ||
                     (c.category ?? "").toLowerCase().includes(q)
             )
@@ -61,7 +70,7 @@ export default function useData() {
 
         setFilteredArticles(
             articles.filter(
-                a =>
+                (a) =>
                     (a.title ?? "").toLowerCase().includes(q) ||
                     (a.description ?? "").toLowerCase().includes(q)
             )
@@ -71,13 +80,13 @@ export default function useData() {
     }, [globalSearch, courses, articles, comments]);
 
     const filteredCoursesLocal = courses.filter(
-        c =>
+        (c) =>
             (c.title ?? "").toLowerCase().includes(courseSearch.toLowerCase()) ||
             (c.category ?? "").toLowerCase().includes(courseSearch.toLowerCase())
     );
 
     const filteredArticlesLocal = articles.filter(
-        a =>
+        (a) =>
             (a.title ?? "").toLowerCase().includes(articleSearch.toLowerCase()) ||
             (a.description ?? "").toLowerCase().includes(articleSearch.toLowerCase())
     );
@@ -100,6 +109,6 @@ export default function useData() {
         active,
         setActive,
         loading,
-        error
+        error,
     };
 }
