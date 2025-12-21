@@ -4,7 +4,7 @@ export default function Course2({ course }) {
 
   return (
     <div
-      className="border relative group h-[250px] border-gray-200 rounded-2xl shadow hover:shadow-xl hover:-translate-y-4 transition overflow-hidden flex p-0 col-span-2"
+      className="border relative group h-[250px] border-gray-200 rounded-2xl shadow hover:shadow-xl hover:-translate-y-4 transition overflow-hidden flex p-0 col-span-2 "
     >
       <div className="lg:relative absolute lg:h-[250px] lg:w-[410px] w-full h-full ">
         <img
@@ -33,7 +33,7 @@ export default function Course2({ course }) {
           </span>
         </h3>
 
-        <div className=" flex justify-between lg:text-sm md:text-base text-xs sm:text-sm text-gray-500 md:mb-14">
+        <div className=" flex justify-between lg:text-sm md:text-base text-[10px] sm:text-sm text-gray-500 md:mb-14">
           <span className="flex items-center space-x-1">
             <i className="fa-regular fa-clock text-orange-500"></i>
             <span>2 Weeks</span>

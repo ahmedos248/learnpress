@@ -11,7 +11,7 @@ const FixedCourse = () => {
                 <p><span className="text-gray-400">by </span>Determined-Poitras</p>
             </div>
             <h1 className="lg:text-4xl md:text-2xl text-xl">The Ultimate Guide to the best WordPress LMS Plugin</h1>
-            <div className="flex justify-evenly w-full md:justify-start md:space-x-1 lg:space-x-4 md:text-sm text-[12px] md:text-gray-500 text-gray-300 md:mb-14">
+            <div className="flex justify-evenly w-full md:justify-start md:space-x-1 lg:space-x-4 md:text-sm text-[10px] md:text-gray-500 text-gray-300 md:mb-14">
                 <span className="flex items-center space-x-1">
                     <i className="fa-regular fa-clock text-orange-500"></i>
                     <span>2 Weeks</span>
