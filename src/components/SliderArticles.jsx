@@ -17,16 +17,14 @@ const tags = [
   "LearnPress",
   "Instructor",
 ];
-const SliderArticles = ({ articles }) => {
-    // Function to get count of articles in each category
+const SliderArticles = ({ className = '', articles }) => {
   const getCount = (cat) =>
     articles.filter((article) => article.category === cat).length;
-  // Sort articles by date in descending order
-const sortedArticles = [...articles].sort(
-  (a, b) => new Date(b.date) - new Date(a.date)
-);
+  const sortedArticles = [...articles].sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
   return (
-    <div className='flex flex-col'>
+    <div className={`flex flex-col ${className}`}>
       <div className="mb-5">
         <h3 className="font-semibold mb-3"> Category</h3>
         {categories.map((cat) => (
