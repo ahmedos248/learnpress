@@ -9,7 +9,7 @@ const BlogDetails = () => {
 
 
     return (
-        <div>
+        <div className='text-xs sm:text-sm md:text-base'>
             <div className='flex justify-between'>
                 <h1 className="md:text-4xl text-2xl font-semibold mb-4">{article.title}</h1>
             </div>

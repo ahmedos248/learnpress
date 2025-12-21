@@ -9,7 +9,7 @@ const Reviews = () => {
     const { currentData, currentPage, totalPages, goTo, next, prev } = usePagination(filteredComments, 3);
 
     return (
-        <div>
+        <div className="exo-text text-xs sm:text-sm md:text-base">
             <h2 className="text-lg font-semibold mb-4">Comments</h2>
             <div className="flex items-center gap-4">
                 <span className="text-4xl font-bold">4.0</span>

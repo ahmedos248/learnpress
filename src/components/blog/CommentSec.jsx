@@ -7,10 +7,10 @@ const CommentSec = () => {
     const { filteredComments } = useData();
     const { currentData, currentPage, totalPages, goTo, next, prev } = usePagination(filteredComments, 3);
     return (
-        <div className="mt-6 space-y-6">
+        <div className="mt-6 space-y-6 text-xs sm:text-sm md:text-base">
             {currentData.length > 0 ? (
                 currentData.map((comment, idx) => (
-                    <div key={comment.id} className={`flex flex-wrap h-52 md:h-36 gap-4 border-t pt-4 ${idx === 1 ? "ms-10" : ""}`}>
+                    <div key={comment.id} className={`flex flex-wrap h-40 md:h-36 gap-4 border-t pt-4 ${idx === 1 ? "ms-10" : ""}`}>
                         <img
                             src={comment.avatar}
                             alt={comment.name}

@@ -15,7 +15,7 @@ const Breadcrumb = () => {
     if ((pathnames[0] === 'blog' || pathnames[0] === 'articles') && index === 1) {
       return currentArticle?.title || 'Blog Single';
     }
-    return segment;
+    return segment.charAt(0).toUpperCase() + segment.slice(1);
   };
 
   return (
@@ -30,17 +30,25 @@ const Breadcrumb = () => {
           const label = formatLabel(segment, index);
           const colorClass = isLast ? "text-gray-400" : "text-gray-600";
 
+          const to = `/${pathnames.slice(0, index + 1).join('/')}`;
+
           return (
             <span key={index} className="inline-flex items-center">
               <span className="mx-2" aria-hidden="true">
                 ›
               </span>
-              <span
-                className={colorClass}
-                aria-current={isLast ? "page" : undefined}
-              >
-                {label}
-              </span>
+              {isLast ? (
+                <span className={colorClass} aria-current="page">
+                  {label}
+                </span>
+              ) : (
+                <Link
+                  to={to}
+                  className="text-gray-600 hover:underline hover:text-orange-500"
+                >
+                  {label}
+                </Link>
+              )}
             </span>
           );
         })}

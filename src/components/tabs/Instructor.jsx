@@ -2,7 +2,7 @@ import React from 'react'
 
 const Instructor = () => {
     return (
-        <div>
+        <div className="text-xs sm:text-sm md:text-base">
             <div className="flex space-x-4">
                 <img src="/images/p.svg" alt="" />
                 <div>

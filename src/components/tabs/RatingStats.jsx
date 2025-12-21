@@ -9,7 +9,7 @@ const RatingStats = () => {
         { stars: 1, percent: 1 },
     ];
     return (
-        <div className="mt-4 space-y-2">
+        <div className="mt-4 space-y-2 ">
             {ratingStats.map((item) => (
                 <div key={item.stars} className="flex items-center gap-2">
                     <div className="flex text-yellow-400">

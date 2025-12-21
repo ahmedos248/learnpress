@@ -26,7 +26,7 @@ export function Curriculum() {
         { id: 3, title: "Lessons with video content", lessons: 5, duration: "45 Mins" },
     ];
     return (
-        <div className="mt-6 space-y-4 exo-text">
+        <div className="mt-6 space-y-4 exo-text text-xs sm:text-sm md:text-base">
             {sections.map(({ id, title, lessons, duration }) => (
                 <Accordion key={id} open={open === id}>
                     <div
@@ -44,7 +44,7 @@ export function Curriculum() {
                             <span>{duration}</span>
                         </div>
                     </div>
-                    <AccordionBody className="!bg-white rounded-b-xl p-3">
+                    <AccordionBody className="!bg-white rounded-b-xl p-3 text-xs sm:text-sm md:text-base">
                         <Lessons />
                     </AccordionBody>
                 </Accordion>

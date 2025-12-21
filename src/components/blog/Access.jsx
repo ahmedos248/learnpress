@@ -22,7 +22,7 @@ const Access = () => {
     }
 
     return (
-        <div className="flex justify-between gap-8 mt-10">
+        <div className="flex justify-between gap-8 mt-10 text-xs sm:text-sm md:text-base">
             {prevArticle && (
                 <div className="border relative rounded-2xl p-4 flex flex-row gap-4 items-center w-60 text-[14px] md:text-base sm:w-72 md:w-96 h-36 md:h-28 overflow-hidden">
                     <img src={prevArticle.image} alt={prevArticle.title} className="object-cover absolute w-full h-full -z-10 top-0 left-0 opacity-30" />
